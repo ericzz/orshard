@@ -1,0 +1,132 @@
+html{color:#000;background:#FFF;}body,div,dl,dt,dd,ul,ol,li,pre,code,form,fieldset,legend,input,button,textarea,p,blockquote,th,td{margin:0;padding:0;}table{border-collapse:collapse;border-spacing:0;}fieldset,img{border:0;}address,caption,cite,code,dfn,em,th,var,optgroup{font-style:inherit;font-weight:inherit;}del,ins{text-decoration:none;}li{list-style:none;}caption,th{text-align:left;}q:before,q:after{content:'';}abbr,acronym{border:0;font-variant:normal;}sup{vertical-align:baseline;}sub{vertical-align:baseline;}legend{color:#000;}input,button,textarea,select,optgroup,option{font-family:inherit;font-size:inherit;font-style:inherit;font-weight:inherit;}input,button,textarea,select{font-size:100%;}
+a {outline: none;} /* Gets rid of Firefox's dotted borders */
+a img {border: none;} /* Gets rid of IE's blue borders */
+
+
+html, body {
+  font-family: "Segoe UI", Arial, Helvetica;
+  overflow: hidden;
+}
+
+h3 {
+  margin-top: 0;
+  padding-top: 0;
+}
+
+#map_canvas {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 5;
+}
+
+div {
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+}
+
+.head_button {
+  float: right;
+  background-color: rgba(255,255,255,0.1);
+  text-align: center;
+  color: #fff;
+  height: 30px;
+  line-height: 30px;
+  font-size: 12px;
+  width: 240px;
+  margin-right: 20px;
+  margin-top: 5px;
+  -webkit-transition: background-color 300ms ease-in;  
+  -moz-transition: background-color 300ms ease-in;  
+  -o-transition: background-color 300ms ease-in;  
+  transition: background-color 300ms ease-in;
+  cursor: pointer;
+}
+
+.head_button:hover {
+  background-color: rgba(0,0,0,0.5);
+}
+
+.clear {
+  clear: both;
+}
+
+textarea {
+  border: 0;
+  color: #fff;
+  padding: 5px;
+  box-shadow: 2px 2px 2px #333;
+  background-color: rgba(255,255,255,0.1);
+  -webkit-transition: background-color 300ms ease-in;  
+  -moz-transition: background-color 300ms ease-in;  
+  -o-transition: background-color 300ms ease-in;  
+  transition: background-color 300ms ease-in;
+  width: 230px;
+  outline: 0;
+}
+
+textarea:focus {
+  background-color: rgba(0,0,0,0.5);
+}
+
+#addpanel, #head, #aboutpanel {
+  z-index: 6;
+  position: absolute;
+  width: 300px;
+  padding-top: 15px;
+  border-left: 5px solid rgba(0,0,0,0.1);
+  color: #fff;
+}
+
+#aboutpanel h2, #addpanel h2 {
+  color: #fff;
+  margin-top: 0;
+  margin-left: 15px;
+}
+
+#addpanel, #aboutpanel {
+  right: -305px;
+  top: 170px;
+  background-color: rgba(0,0,0,0.8);
+  height: 350px;
+}
+
+.a, .b {
+  padding: 10px 20px;
+}
+
+.b {
+  background-color: rgba(255,255,255,0.05);
+}
+
+.a {
+  background-color: rgba(255,255,255,0.10);
+}
+
+#addpanel {
+}
+
+#aboutpanel {
+}
+
+#head {
+  right: -270px;
+  top: 50px;
+  background: rgba(0,0,0,0.6) url('../images/tab.png') top left no-repeat;
+  height: 85px;
+  padding-top: 15px;
+  -webkit-transition: right 300ms ease-in, background-color 300ms ease-in;  
+  -moz-transition: right 300ms ease-in, background-color 300ms ease-in;  
+  -o-transition: right 300ms ease-in, background-color 300ms ease-in;  
+  transition: right 300ms ease-in, background-color 300ms ease-in;
+}
+
+#head:hover {
+  right: 0;
+  background-color: rgba(0,0,0,0.8);
+}
